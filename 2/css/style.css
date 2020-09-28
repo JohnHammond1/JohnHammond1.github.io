@@ -1,0 +1,647 @@
+@import url('../fonts/font.css');
+
+/******GENERAL CSS START******/
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+}
+
+h1 {
+    font-size: 30px
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+.container {
+    width: 1100px;
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flexRow {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.flexColumn {
+    -webkit-flex-direction: Column;
+    -ms-flex-direction: Column;
+    flex-direction: Column;
+}
+
+.alignItemCenter {
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.alignItemEnd {
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+
+.justifyConEnd {
+    justify-content: flex-end;
+}
+
+.justifyConCenter {
+    justify-content: center;
+}
+
+
+/******GENERAL CSS END******/
+
+
+/******HEADER CSS START******/
+
+header {
+    background: #fff;
+}
+
+.navbar {
+    flex: 0 1 67%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logobar {
+    flex: 0 1 80%;
+    text-align: left;
+}
+
+.logobar a {
+    padding: 15px 0;
+    display: inline-block;
+    color: #303451;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 800;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.logobar a span {
+    display: block;
+    color: #303451;
+}
+
+.rightPhone {
+    flex: 0 1 60%;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.rightPhone i.fa.fa-phone {
+    margin-right: 10px;
+}
+
+.rightPhone a {
+    font-size: 36px;
+    margin-top: 5px;
+    color: #e31b28;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.rightPhone span {
+	font-size:18px;
+    color: #303451;
+    display: block;
+    font-weight: 600;
+}
+
+
+/******END CSS START******/
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+}
+
+.right-text {
+    background:  #1A2F53;
+    width: 32%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.accordion-wrapper h3 {
+    margin-bottom: 0;
+}
+
+.accordion-wrapper h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.tab-wrapper h1,
+.tab-wrapper h2,
+.tab-wrapper h4,
+.tab-wrapper h3 {
+    color: #333;
+}
+
+.right-text p {
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.right-text span {
+    font-size: 26px;
+    color: #fff;
+    display: block;
+    margin: 10px 0 20px;
+    line-height: 1.2;
+}
+
+.inner-right-text a {
+    color: #fff;
+    background-color: #E31B2B;
+    border-color: #e31b28!;
+    letter-spacing: 1px;
+    padding: 10px 28px;
+    font-size: 22px;
+    font-weight: 800;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.accordion-wrapper img {
+    max-width: 100%;
+}
+
+.inner-right-text a i {
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.left-img {
+    width: 68%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.left-img img {
+    width: 100%;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tab-wrapper {
+    padding: 20px 0;
+    color: #000;
+}
+
+.tab-wrapper h2 {
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+.tab-wrapper p {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.strong {
+    font-weight: 800;
+}
+
+.accordion-wrapper h4 {
+    margin-bottom: 0;
+}
+
+.quote-page {
+    text-align: center;
+}
+
+.quote-page h1,
+.quote-page p {
+    margin: 0;
+}
+
+.quote-page p {
+    margin-bottom: 15px;
+}
+
+.quote-page>div {
+    margin: 0 auto;
+}
+
+
+/******START RECTANGLE BOX CSS******/
+
+.rectangle-box {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.inner-box {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.inner-box p {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.inner-box span {
+    font-size: 28px;
+    display: inline-block;
+    font-weight: 600;
+    width: 100%;
+}
+
+.inner-box a {
+    font-size: 30px;
+    font-weight: bold;
+    color: #f77d0e;
+    margin-bottom: 0 !important;
+    margin-top: 10px;
+}
+
+
+/******END RECTANGLE BOX CSS******/
+
+
+/******START TAP TO CALL BOX CSS******/
+
+.tabtocall {
+    background: #509900;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.tabtocall a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.tabtocall a img {
+    vertical-align: middle;
+    width: 24px;
+    margin-right: 10px;
+}
+
+.tabtocall {
+    display: none;
+}
+
+
+/******END TAP TO CALL BOX CSS******/
+
+.main-help {
+    background: #2d67c4;
+    padding: 16px 0;
+}
+
+.need-help p {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+.need-help p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.need-help i.fa.fa-phone {
+    background: #fff;
+    color: #2d67c4;
+    border-radius: 50%;
+    padding: 4px 6px;
+    margin: 0 10px;
+}
+
+.footer-content {
+    background: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-content ul li {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-content ul li:last-child a {
+    border: 0;
+    padding-right: 0;
+}
+
+.footer-content p {
+    margin: 15px 0 0;
+    color: #fff;
+    font-size: 15px;
+}
+
+.footer-content p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.tab-wrapper a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.tab-wrapper ul {
+    column-count: 2;
+}
+
+@media(max-width:992px) {
+    body {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    .slider-contant {
+        width: 70%;
+    }
+    .left-img img {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media(max-width:767px) {
+    #navbar .flexbox.flexRow.alignItemCenter {
+        flex-direction: column;
+    }
+    .rightPhone span {
+        margin-top: 5px;
+    }
+    .left-img img {
+        position: unset;
+        transform: translate(0%, 0%);
+        width: 100%;
+        height: auto;
+    }
+    .left-img {
+        height: auto;
+    }
+    .logobar a {
+        padding: 15px 0 5px;
+    }
+    .footer-content {
+        padding: 20px 0 70px;
+    }
+    .tabtocall {
+        display: block;
+    }
+    .main-hero .container {
+        padding: 0;
+    }
+    .left-img {
+        width: 100%;
+    }
+    .need-help p span {
+        display: block;
+        margin-top: 10px;
+    }
+    .need-help p {
+        font-size: 18px;
+    }
+    .right-text {
+        width: 100%;
+        padding: 15px;
+    }
+    .slider-contant span {
+        font-size: 28px;
+    }
+    .slider-contant p {
+        font-size: 16px;
+    }
+    .slider-contant {
+        width: calc(100% - 30px);
+        padding: 20px;
+    }
+    .tabButtons {
+        flex-direction: column;
+    }
+    .tabBtn {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .tab-wrapper ul {
+        column-count: 2;
+    }
+    footer>div>.flexbox {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer p {
+        margin-bottom: 10px;
+    }
+    .btn-group .btn {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .tab-wrapper h2 {
+        font-size: 24px;
+    }
+    .toggleBtn {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .navbar {
+        display: none;
+    }
+    .mobileMenu .navbar {
+        display: block;
+    }
+    .navbar ul {
+        flex-direction: column;
+    }
+    .logobar {
+        flex: 0 1 75%;
+    }
+    .mobileMenu .alignItemCenter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .mobileMenu .navbar li a {
+        padding-left: 0;
+    }
+    .slider {
+        background-attachment: scroll;
+    }
+    footer div>ul {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .btn {
+        width: 265px;
+        font-size: 16px;
+    }
+    .rightPhone {
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media(min-width:992px) {
+    .tabtocall {
+        display: none;
+    }
+}
+
+@media(max-width:320px) {
+    .tab-wrapper ul {
+        column-count: 1;
+    }
+}
+
+@media(max-width:767px) {
+    .inner-box .btn-group {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .inner-box span {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+
+.waitText {
+    font-size: 42px;
+    text-align: center;
+    display: block;
+    color: #E31B2B;
+    font-weight: 800;
+}
+
+.popupWait {
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.popupWait p {
+    text-align: center;
+    font-size: 22px;
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.popupWait a {
+    color: #fff;
+    background-color: #E31B2B;
+    padding: 10px 28px;
+    font-size: 18px;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.popupWait a i {
+    margin-right: 10px;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+p.para2 {
+    color: #2d67c4;
+    font-size: 18px;
+}
+
+.close-btn {
+    background: transparent;
+    border: 0;
+    font-size: 22px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    z-index: 100;
+}
